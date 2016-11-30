@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        .text-garapha:first-line{
+            color:red;
+        }
+        .text-garapha:first-letter{
+            color:blue;
+        }
+        label{
+            border:10px #000000;
+        }
+        .one{
+            width:100px;
+            height:100px;
+
+            margin:150px 50px;
+
+
+        }
+        .one:before{
+            ffeofsjoejfoiesjf
+        }
+        .two{
+            width:100px;
+            height:100px;
+            background-color:#ff0000;
+            margin:20px 50px;;
+
+        }
+        .before-attr:before{
+            content:"("attr(data-illustrate)")";
+        }
+        .one h1:before{
+            counter-reset:subsection;
+        }
+        .one h1:before{
+            counter-increment:section;
+            content:"Section"counter(section)".";
+        }
+        .one h2:before{
+            counter-increment:subsection;
+            content:counter(section)"."counter(subsection)"";
+        }
+
+
+        .B{
+            width:600px;
+            height:auto;
+            background-color: #FFFF00;
+        }
+
+        .A{
+            width:100px;
+            height:100px;
+            background-color: #2d2d2d;
+            border:4px #ff0000 solid;
+            float:left;
+        }
+        /*.B:after{*/
+            /*clear:both;*/
+            /*content:'';*/
+            /*display:block*/
+        /*}*/
+
+
+        .c{
+            width:100px;
+            height:100px;
+            background-color: #6F1A04;
+        }
+        .by-index>li:nth-child(2){
+            background-color: #6F1A04;
+
+        }
+        .old-even>li:nth-child(even){
+            background-color: #6F1A04;
+        }
+        .old-even>li:nth-child(odd){
+            background-color: #ff0000;
+        }
+        .muzela>li:nth-child(-5n+1){
+            background-color: #FFFF00;
+        }
+
+        label{
+            border:1px #0000ff solid;
+
+        }
+    </style>
+</head>
+<body>
+<p class="text-garapha">
+    ds,ds;c,;ds,c;dsvmdsvmsdvl;dl;,vdd,cd;lc,d;c,<br>
+    adsasmd;lasfm;lasfmc;lasmfcl;asfmfasl;ff,dscbrdbr.<br>
+</p>
+<label>都快疯了</label>
+<div class="before-attr">
+
+</div>
+<div class="one">
+    <h1>diao</h1>
+    <h2>DIAO</h2>
+    <h2>ddddd</h2>
+    <h2>ggggg</h2>
+</div>
+
+
+
+    <h1>diao</h1>
+
+
+    <div class="B">
+
+    <div  class="A">
+
+    </div>
+    <div  class="A">
+
+    </div>
+    <div  class="A">
+
+    </div>
+    <div  class="A">
+
+    </div>
+    </div>
+    <div class="c">
+
+    </div>
+    <div class="container">
+        <ul class="by-index">
+            <li>1</li>
+            <li>2</li>
+            <li>3</li>
+            <li>4</li>
+            <li>5</li>
+        </ul>
+        <ul class="old-even">
+            <li>1</li>
+            <li>2</li>
+            <li>3</li>
+            <li>4</li>
+            <li>5</li>
+
+        </ul>
+        <ul class="muzela">
+            <li>1</li>
+            <li>2</li>
+            <li>3</li>
+            <li>4</li>
+            <li>5</li>
+
+        </ul>
+    </div>
+    <label>ssssss</label>
+
+
+</body>
+</html>

@@ -1,0 +1,120 @@
+body{
+    margin:0;
+    padding:0;
+}
+.loge-continer{
+    margin-left: 150px;
+    margin-top:20px;
+    height:140px;
+}
+.txt{
+    position:relative;
+    left:90px;
+}
+
+
+.navgater{
+    background-color: #777777;
+    height:80px;
+}
+[href="##"]{
+    font-size:30px;
+    color:#ff0000;
+    position:relative;
+    top:20px;
+}
+.a{
+    float:left;
+}
+#search{
+    height:40px;
+    width:200px;
+    background-color: rgba(198, 198, 154, 0.33);
+    margin-left:200px;
+    position:relative;
+    top:20px;
+}
+a:link{
+    text-decoration: none;
+}
+[href="#"]{
+    color:red;
+}
+
+
+
+
+
+.game{
+    width:500px;
+    height:300px;
+    float:left;
+    margin-left:50px;
+    font-size:30px;
+    color:red;
+}
+.kuang{
+    border:medium;
+    border-buttom-color:#ff0000;
+}
+.lunbo{
+    width:500px;
+    height:300px;
+    float:left;
+}
+.qiehuan{
+    width:500px;
+    height:30px;
+    background-color:rgba(198,198,154,0.7);
+    position:relative;
+    top:-30px;
+}
+
+.pinglun{
+    width:500px;
+    height:300px;
+    margin-left:1200px;
+    font-size:30px;
+    color:red;
+}
+
+table{
+    text-align:center;
+    width:1400px;
+    margin:auto;
+}
+
+
+
+
+
+
+
+
+
+.zhuce{
+    height:400px;
+    background-color:#555555;
+}
+.title{
+    font-size: large;
+    height:40px;
+    position:relative;
+    top:10px;
+}
+.friendlink{
+    font-size:20px;
+    margin-left:100px;
+    float:left;
+}
+.Zhuce{
+    width:200px;
+    font-size:20px;
+    margin-left:600px;
+    float:left;
+}
+.denglu{
+    width:200px;
+    font-size:20px;
+    margin-left:1200px;
+}

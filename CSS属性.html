@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>属性选择器与属性值选择器</title>
+    <style>
+        [title]{
+            color:#fff;
+            background-color: #777;
+        }
+        [title=abc]{
+            color:blue;
+        }
+        [data-code]{
+            color:#0f0;
+            background-color: #777777;
+        }
+
+      form label[for=goodsCode]{
+            color:blue;
+
+        }
+
+        form>label{
+            color:red;
+        }
+
+
+        [for=goodsID]+[type=text]{
+            color:yellow;
+        }
+        br+[for=goodsName]{
+            color:black;
+        }
+
+        [for="goodsCode"]~select{
+            color:blue;
+        }
+        a:link{
+            text-decoration:none;
+            color:red;
+        }
+        a:hover{
+
+            color:#f00;
+        }
+        a:visited{
+            color:#000;
+
+        }
+        a:active{
+            color:blue;
+        }
+        #focusTest:focus{
+            color:gray;
+            background-color: #777777;
+        }
+        #focusTests:focus{
+            color:#FFFF00;
+            background-color:#88ff66;
+        }
+        .showElement{
+            width:200px;
+            height:300px;
+            background-color:#00ff00;
+            /*display:none;*/
+
+            /*margin-top:-1000px ;*/
+        }
+        #showElement:checked+#showElements{
+            visibility: hidden;
+        }
+        #showElement{
+            visibility:hidden;
+        }
+
+        #focusbutton{
+
+            background-color: gray;
+        }
+        .dian1{
+              background-color: #88ff66;
+              width:200px;
+              height:200px;
+              visibility:hidden;
+          }
+        .dian{
+            background-color: gray;
+            width:200px;
+
+
+        }
+        #focusbutton:focus+.dian1{
+            visibility:visible;
+        }
+
+
+
+
+
+    </style>
+
+
+</head>
+<body>
+    <h1>CSS属性选择器</h1>
+    <p>段落</p>
+    <p title="abc">title-abc</p>
+    <p title="def">title-def</p>
+    <p data-code="ghi">data-code=ghi</p>
+    <hr/>
+    <h2>示例3</h2>
+    <div id="datasubmitwrapper" class="container">
+        <form action="#">
+            <label for="goodsCode">商品代码</label>：<input type="text" id="goodsCode"/><br/>
+            <label for="goodsID">商品ID</label>：<input type="text" id="goodsID"/><br/>
+            <label for="goodsName">商品名称</label>：
+            <select id="goodsName">
+                <option value="水果">水果</option>
+                <option selected value="蔬菜" >蔬菜</option>
+            </select>
+            <br/>
+            <label for="idCustom">是否为自定义</label>:<input type="radio" id="idCustom"/>
+            <input type="submit" value="提交" >
+            <input type="button" value="取消" >
+            <label>商品特性</label>：
+            <input type="checkbox" name="100"   id="112"/>游戏 <img src="#" alt="game"/>
+            <input type="checkbox" name="100"   id="113"/>电影 <img src="#" alt="movie"/>
+            <input type="checkbox"  onclick="select()"/>全选
+
+        </form>
+
+    </div>
+
+    <h1>伪类</h1>
+    <ul>
+        <li><a href="#">百度</a></li>
+        <li><a href="#">新浪</a></li>
+        <li><a href="#">淘宝</a></li>
+        <li><a href="#">凤凰</a></li>
+        <li><a href="#">京东</a></li>
+
+    </ul>
+    <!--<h1>伪类示例</h1>-->
+    <!--<input type="text" id="focusTest"/>-->
+    <!--<input type="button"   value="按下"   id="focusTests"/><br/>-->
+
+    <!--<label for="showElement">title</label><input type="checkbox" id="showElement"/>-->
+    <!--<div class="showElement" id="showElements"  >-->
+        <h1>伪类示例</h1>
+        <input id="focusbutton" type="button">
+           <label for="focusbutton">点我</label>
+
+            <div class="dian1">
+            </div>
+
+
+
+
+
+
+
+
+</body>
+</html>

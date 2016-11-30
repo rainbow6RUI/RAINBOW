@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>学员信息登记</title>
+    <style>
+        body{
+            font-size:30px;
+            margin:0;
+            padding:0;
+        }
+        #Name{
+            background-color:paleturquoise;
+        }
+        #zhengshu{
+            color:blue;
+        }
+        span{
+            color:red;
+        }
+        #emial{
+            background-color: purple;
+        }
+        #sex{
+            color:green;
+        }
+        [for=xiangxidizhi]{
+            font-family:"Verdana Pro Cond SemiBold";
+            font-size:60px;
+        }
+        #dianwo{
+            background-color: red;
+            width:600px;
+            height:500px;
+            visibility:hidden;
+        }
+        #toggle:checked~#dianwo{
+
+            visibility:visible;
+        }
+        .contianer{
+            width:600px;
+            height:600px;
+            background-image:url('../source-code/images/www.jpg');
+            background-repeat:no-repeat;
+        }
+        .icon{
+            width:40px;
+            height:40px;
+            background-image:url('../source-code/images/背景雪碧图.png');
+            background-repeat:no-repeat;
+        }
+        .bg-1{
+            background-position: -129px -17px;
+        }
+        .bg-1:hover{
+            background-position:-129px -69px;
+        }
+        .bg-2{
+            background-position:-70px -17px;
+        }
+        .bg-2:hover{
+            background-position:-70px -69px;
+        }
+        .bg-3{
+             background-position:-246px -17px;
+         }
+        .bg-3:hover{
+            background-position:-246px -60px;
+        }
+        .bg-4{
+            background-position:-187px -17px;
+        }
+        .bg-4:hover{
+            background-position:-187px -60px;
+        }
+        .bg-5{
+            background-position:-11px -17px;
+        }
+        .bg-5:hover{
+            background-position:-11px -60px;
+        }
+        .bg-6{
+            background-position:-305px -17px;
+        }
+        .bg-6:hover{
+            background-position:-305px -60px;
+        }
+
+
+
+        *{
+            box-sizing: padding-box;
+        }
+        .box{
+            width:200px;
+            height:200px;
+            background-color:#88ff66;
+            border:20px solid #ff0000;
+            padding:20px 10px;
+        }
+        /*盒模型*/
+
+
+        .position {
+            width: 300px;
+            height: 300px;
+            background-color: black;
+            float: top;
+            color: #ff0000;
+        }
+
+        /*}默认定位与浮动定位*/
+        .relative {
+            position: relative;
+            top: 50px;
+            left: 50px;
+        }
+        /*}相对定位*/
+        .absolute{
+            position:absolute;
+            top:30px;
+            left:30px;
+        }
+        /*绝对定位*/
+
+
+        .position-fixed{
+            position:fixed;
+            top:50px;
+        }
+        /*固定定位*/
+    </style>
+</head>
+<body>
+    <h1 style="font-size:80px;">&nbsp;&nbsp;&nbsp;&nbsp;<strong>学院信息登记</strong></h1>
+    <form action="#">
+        <label for="Name">&nbsp;&nbsp;&nbsp;&nbsp;姓名</label>：<input type="text" id="Name"><br><br>
+        <label id="sex" name="sex">&nbsp;&nbsp;&nbsp;&nbsp;性别</label>:<input type="radio" name="sex"  id="women">女 &nbsp;<input type="radio"  name="sex"  id="man">男
+        <br><br>
+        <label>&nbsp;&nbsp;&nbsp;&nbsp;爱好</label>:<input type="checkbox"  id="basketball">篮球 &nbsp;<input type="checkbox"  id="weibo">刷微博 &nbsp;
+                            <input type="checkbox"  id="shopping">购物&nbsp;<input type="checkbox"  id="skill"><span>总结知识结构技能</span>
+        <br><br>
+
+        <label>&nbsp;&nbsp;&nbsp;&nbsp;头像</label>:
+            <select>
+
+            </select><br><br>
+
+        <label for="emial">&nbsp;&nbsp;&nbsp;&nbsp;邮箱</label>:<input type="text" id="emial"><br><br>
+        <label name="location">&nbsp;&nbsp;所在地</label>:
+            <select name="" id="sheng">
+                <option value="四川">四川</option>
+                <option selected value="西藏">西藏</option>
+                <option value="云南">云南</option>
+            </select>
+            &nbsp;&nbsp;&nbsp;
+            <select name="location" id="shi">
+                <option value="成都">成都</option>
+                <option selected value="拉萨">拉萨</option>
+                <option value="昆明">昆明</option>
+            </select>
+            &nbsp;&nbsp;&nbsp;
+            <select name="location" id="qu">
+                <option value="双流">双流</option>
+                <option selected value="拉县">拉县</option>
+                <option value="昆县">昆县</option>
+            </select>
+        <br><br>
+        <label for="xiangxidizhi">&nbsp;&nbsp;&nbsp;&nbsp;详细地址</label>：<input type="text" id="xiangxidizhi" style="width: 600px;height:40px;" >
+        <br><br>
+
+        <label id="zhengshu">考过的证书:</label>
+        <ul>
+            &nbsp;&nbsp;&nbsp;&nbsp; <li>计算机等级证</li>
+            &nbsp;&nbsp;&nbsp;&nbsp;<li>好人证</li>
+            &nbsp;&nbsp;&nbsp;&nbsp;<li>学位证</li>
+        </ul>
+        <br><br>
+        <label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;其他:</label>
+        <ol type="I" start="V" margin-left="500px;">
+            &nbsp;&nbsp;&nbsp;&nbsp;<li>大学英语四级证</li>
+            &nbsp;&nbsp;&nbsp;&nbsp;<li>证书</li>
+            &nbsp;&nbsp;&nbsp;&nbsp;<li>优秀团员</li>
+            &nbsp;&nbsp;&nbsp;&nbsp;<li>五好学生证</li>
+        </ol>
+        <br><br>
+
+        <label>数学成绩:</label> <input type="number">
+        <br><br>
+
+        <label>空气湿度:</label> <input type="range">
+        <br><br>
+
+        <input id="toggle" type="checkbox" >
+            toggle
+
+        <div id="dianwo">点我啊</div>
+
+        <br><br>
+    </form>
+
+    <div align="center">
+        <input type="submit" value="提交">&nbsp;&nbsp;&nbsp;&nbsp;<input type="button" value="取消">
+    </div>
+
+    <div class="contianer">
+
+    </div>
+
+
+    <div class="icon bg-1"></div>
+    <div class="bg-2 icon"></div>
+    <div class="bg-3 icon"></div>
+    <div class="bg-4 icon"></div>
+    <div class="bg-5 icon"></div>
+    <div class="bg-6 icon"></div>
+
+    <div class="box">contianer</div>
+
+    <div class="position-static position">1</div>
+
+    <div class="position-static position absolute">3</div>
+    <div class="position-static position relative">2
+    </div>
+
+    <div class="position position-fixed">position-fixed<img src="../source-code/images/www.jpg" width="250"></div>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+
+
+
+
+
+
+
+
+
+
+    </form>
+</body>
+</html>

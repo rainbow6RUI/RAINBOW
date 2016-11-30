@@ -1,0 +1,156 @@
+<html>
+ <!--<meta charset="utf-8"/>-->
+ <head>
+  <title>
+    我的第一个网页
+  </title>
+  <style>
+ 
+
+  #sidebar{
+   color:red;
+  
+  }
+  #inner{
+    color:green;
+	background-color:yellow;
+  }
+  #inner1{
+    color:#FFFF00;
+	background-color:red;
+  }
+
+  .sideBar{
+    font-size:50px;
+  }
+  
+  
+ul ul{
+    color:red;
+	font-size:20px;
+	font-wight:100;
+  }
+ ul>ul {
+    color:blue;
+	font-size:20px;
+	font-wight:100;
+  }
+  </style>
+ </head>
+ <body>
+    <h1>this is title</h1>
+	<h2>this is title
+         <span>title</span>	
+		 <p><span>title</span>	</p>
+	</h2>
+	<h3>this is title</h3>
+	<hr/>
+	<p>
+	&nbsp; this is paragraph,this is paragraph,this is paragraph,this is paragraph,this is paragraph,<br/>
+	this is paragraph,this is paragraph,this is paragraph,this is paragraph,
+	</p>
+	
+	<div id="sidebar">
+	  <div class="sideBar" id="inner">
+	   <ul>
+	    <li>这是派生选择器无序列表</li>
+	   </ul>
+	  </div>
+	  <div class="sideBar">
+	   <ul id="inner1">
+	    <li><p>这是后代选择器</p></li>
+	   </ul>
+	  </div>
+	  <div id="inn">
+	    <ul class="sideBar">
+		  <li>这是派生选择器无序列表</li>
+		</ul>
+	     
+	  </div>
+
+
+	<ul type="circle">
+		  <li>item</li>
+		  <li>item</li>
+		  <li>item</li>
+		  <li>item</li>
+		  <li>item</li>
+	</ul>
+	<ol start="95">
+		  <li>iltem</li>
+		  <li>iltem</li> 
+		  <li>iltem</li>
+		  <li>iltem</li>
+	</ol>
+	<ol type="I">
+		  <li>iltem</li>
+		  <li>iltem</li> 
+		  <li>iltem</li>
+		  <li>iltem</li>
+	</ol>
+	<a href="http//:www.baidu.com" target="_blank">百度一下</a>
+	<img src="..\..\a.jpg" alt="教程" title="幽灵行动幻影" width="150" />
+	<label>
+	   i'm boy
+	</label>
+	<form>
+	   <label>用户名</label>:<input type="text" name="userName"/><br/><br/>
+	   <label>密码</label>:<input type="password" name="passWor"/> <br/><br/>
+	   <label>确认密码</label>: <input type="password" name="con"/> <br/><br/>
+	   <label>邮箱</label>:<input type="email" name="email"/><br/><br/>
+	   <label>地址</label>:
+	       <select>
+		     <option>河南</option>
+			 <option>新疆</option>
+			 <option>北京</option>
+			 <option selected>四川</option>
+		   </select>  <br/><br/>
+		<label>性别</label>:
+		<input type="radio" name="gender"/>男
+		<input type="radio" checked name="gender"/>女
+		<br/><br/>
+	    <label>爱好</label>:
+		<input type="checkbox" name="favorite"/>打球
+		<input type="checkbox" checked name="favorite"/>踢球
+		<br/><br/>
+		<div >
+	      <input type = "submit" value="提交" name="submit"/>
+		  <input type ="button" value="取消" name="cancle"/>
+		</div>
+	   
+	</form>
+	
+	
+	
+	
+	
+	
+	
+	
+	<div>
+	  <ul>
+	    <li>这是子选择器无序列表</li>
+		<li>这是子选择器无序列表</li>
+	  </ul>
+	  <hr/>
+	  <ul>
+	    <li>这是后代选择器无序列表</li>
+		<li>这是后代选择器无序列表</li>
+		<ul>
+		 <li>这是后代选择器无序列表</li>
+		 <li>这是后代选择器无序列表</li>
+		</ul>
+	  </ul>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+ </body>
+</html>

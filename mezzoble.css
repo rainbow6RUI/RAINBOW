@@ -1,0 +1,146 @@
+body{
+    padding:0;
+    margin:0;
+}
+/*.BODY{*/
+    /*width:*/
+/*}*/
+*{
+    box-sizing:border-box;
+}
+.loge-continer{
+    width:1200px;
+    height:112px;
+    margin:0 auto;
+    background-color: #7c7f79;
+}
+.loge-title{
+    width: 292px;
+    height: 79px;
+    background-color: rgba(24,55,54,0.7);
+    position:absolute;
+    top:20px;
+    left:335px;
+    font-size:22px;
+    color:#ffffff;
+    text-align:center;
+    padding:30px;
+}
+.chose-page{
+    width:440px;
+    height:48px;
+    position:absolute;
+    top:30px;
+    right:360px;
+}
+.chose-page>div{
+    width:auto;
+    height:48px;
+    float:left;
+    margin:0;
+    border-right:1px #999999 solid ;
+    padding:10px;
+    color:#ffffff;
+}
+.loge-continer a:link{
+    font-size: 22px;
+    color:#ffffff;
+    text-decoration: none;
+}
+
+
+/*page*/
+.page{
+    width:800px;
+    height:230px;
+    margin:0 0 auto 360px;
+}
+.word{
+
+}
+.switch-page{
+    width:750px;
+    height:40px;
+    margin:30px auto auto 30px;
+    background-color: #f6f6f6;
+    border-bottom: 1px #ddd solid;
+    border-top: 1px #ddd solid;
+    text-align:center;
+
+}
+.switch-page>div{
+    width:29px;
+    height:32px;
+    margin:5px 6px auto 0 ;
+    border:1px #ddd solid;
+    padding:4px;
+    float:left;
+}
+
+
+/*navgator*/
+.navgator{
+    width:391px;
+    height:1357px;
+    background-color:#dedfdc;
+    position:absolute;
+    top:124px;
+    right:360px;
+}
+.search input{
+    width:239px;
+    height:27px;
+    margin:13px 13px auto 13px;
+    float:left;
+}
+.search div{
+    width:108px;
+    height:27px;
+    margin:13px 13px auto 0;
+    border:1px #7c7f79 solid;
+    background-color:#7c7f79;
+    float:left;
+    line-height:1;
+    text-align:center;
+}
+
+/*gallary*/
+.gallary{
+    width:800px;
+    height:700px;
+    margin:0 0 auto 360px;
+}
+.row{
+    width:800px;
+    height:190px;
+    marign:0 0 63px 6px;
+}
+.image{
+    width:212px;
+    height:190px;
+    float:left;
+    margin:0 0 63px 29px;
+    font-size:13px;
+}
+.Page{
+    margin:70px auto auto 360px;
+    width:750px;
+    height:40px;
+    /*margin:30px auto auto 30px;*/
+    background-color:#f6f6f6;
+    border-bottom: 1px #ddd solid;
+    border-top: 1px #ddd solid;
+    text-align:center;
+}
+.Page>div{
+    width:29px;
+    height:32px;
+    margin:5px 6px auto 0 ;
+    border:1px #ddd solid;
+    padding:4px;
+    float:left;
+}
+.switch-page>div:hover,.Page>div:hover{
+    background-color: #000;
+    text-decoration: none;
+}
